@@ -19,6 +19,10 @@ class App extends React.Component {
     this.props.history.push('/counter')
   }
 
+  panelCut = () => {
+    this.props.history.push('/panel')
+  }
+
   render() {
     return (
       <div className="container">
@@ -34,6 +38,9 @@ class App extends React.Component {
         </Button>
         <Button type="primary" className="btn" onClick={this.counterTool}>
           计数工具
+        </Button>
+        <Button type="primary" className="btn" onClick={this.panelCut}>
+          面板切换
         </Button>
       </div>
     )

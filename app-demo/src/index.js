@@ -11,6 +11,7 @@ import Result from './views/dati/Result'
 import Epidemic from './views/yiqing/Epidemic'
 import News from './views/news/News'
 import Counter from './views/counter/Counter'
+import Panel from './views/panel/panelCut'
 
 ReactDOM.render(
   <Provider store={store}>
@@ -21,6 +22,7 @@ ReactDOM.render(
       <Route path="/epidemic" component={Epidemic}></Route>
       <Route path="/news" component={News}></Route>
       <Route path="/counter" component={Counter}></Route>
+      <Route path="/panel" component={Panel}></Route>
     </Router>
   </Provider>,
   document.getElementById('root')

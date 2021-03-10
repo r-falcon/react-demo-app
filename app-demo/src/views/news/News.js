@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { withRouter } from 'react-router-dom'
 import resFun from '../../store/asyncMethods'
 import bannerImg from '../../assets/imgs/banner.jpg'
 import loadingImg from '../../assets/imgs/loading.gif'
@@ -72,4 +73,4 @@ const mapStateToProps = function (state) {
 
 const News = connect(mapStateToProps, mapDispatchToProps)(NewsCom)
 
-export default News
+export default withRouter(News)

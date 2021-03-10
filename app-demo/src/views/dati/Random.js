@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { withRouter } from 'react-router-dom'
 import resFun from '../../store/asyncMethods'
 import loadingImg from '../../assets/imgs/loading.gif'
 
@@ -129,4 +130,4 @@ const mapStateToProps = function (state) {
 
 const Random = connect(mapStateToProps, mapDispatchToProps)(RandomCom)
 
-export default Random
+export default withRouter(Random)

@@ -3,12 +3,12 @@
   padding: 0;
 }
 html {
-  background: #FFFFDF;
+  background: #ffffdf;
 }
 .container {
   width: 100%;
   height: 100vh;
-  background: #FFFFDF;
+  background: #ffffdf;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -35,7 +35,7 @@ html {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: #FFFFDF;
+  background: #ffffdf;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,23 +60,23 @@ html {
   box-sizing: border-box;
   line-height: 80px;
   padding-left: 20px;
-  background: #66B3FF;
+  background: #66b3ff;
   border-radius: 10px;
   margin-bottom: 10px;
   color: #333;
   font-size: 18px;
 }
 .datiContainer .optContainer .optItems.correct {
-  background: #93FF93;
+  background: #93ff93;
 }
 .datiContainer .optContainer .optItems.error {
-  background: #FF5151;
+  background: #ff5151;
 }
 .loading {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: #FFFFDF;
+  background: #ffffdf;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -86,7 +86,7 @@ html {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: #FFFFDF;
+  background: #ffffdf;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -110,7 +110,7 @@ html {
 }
 .epidemicContainer {
   width: 100%;
-  background: #FFFFDF;
+  background: #ffffdf;
   margin: 0 auto;
 }
 .epidemicContainer h1 {
@@ -173,10 +173,10 @@ html {
   align-items: center;
 }
 .epidemicContainer .detailContainer .detailBox .detailMain:nth-of-type(odd) {
-  background: #FFED97;
+  background: #ffed97;
 }
 .epidemicContainer .detailContainer .detailBox .detailMain:first-child {
-  background: #FFE66F;
+  background: #ffe66f;
 }
 .epidemicContainer .detailContainer .detailBox .detailMain h2 {
   width: 25%;
@@ -202,7 +202,8 @@ html {
 }
 .newsContainer {
   width: 100%;
-  background: #FFFFDF;
+  background: #ffffdf;
+  overflow: hidden;
 }
 .newsContainer .banner {
   width: 100%;
@@ -215,7 +216,7 @@ html {
   height: 50px;
   margin: 10px auto;
   line-height: 50px;
-  background: #FFE66F;
+  background: #ffe66f;
 }
 .newsContainer .newsContent {
   width: 100%;
@@ -234,7 +235,7 @@ html {
 }
 .newsContainer .newsContent .newsList .newsItem {
   width: 100%;
-  background: #FFF0AC;
+  background: #fff0ac;
   padding: 10px;
   position: relative;
   margin: 20px auto;
@@ -258,7 +259,7 @@ html {
   top: 26px;
   left: -31px;
   border: 16px solid transparent;
-  border-right-color: #FFF0AC;
+  border-right-color: #fff0ac;
 }
 .newsContainer .newsContent .newsList .newsItem::after {
   content: '';
@@ -278,11 +279,45 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #FFFFDF;
+  background: #ffffdf;
 }
 .counterContainer .control_btn {
   width: 80%;
   height: 50px;
   margin: 10px auto;
-  background: #DEFFAC;
+  background: #deffac;
+}
+.tabContainer {
+  width: 100%;
+  background: #ffffdf;
+  position: relative;
+}
+.tabContainer .navBox {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+.tabContainer .navBox .navItem {
+  width: 88px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  font-size: 16px;
+}
+.tabContainer .navBox .navItem.active {
+  color: #000;
+  font-weight: bold;
+}
+.tabContainer .navBox .barItem {
+  position: absolute;
+  width: 44px;
+  height: 4px;
+  background: orange;
+  bottom: 0;
+}
+.tabContainer .tabBox {
+  width: 1500px;
+  display: flex;
+  overflow: hidden;
 }

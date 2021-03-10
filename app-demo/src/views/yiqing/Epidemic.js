@@ -1,6 +1,7 @@
 import React from 'react'
 import resFun from '../../store/asyncMethods'
 import { connect } from 'react-redux'
+import { withRouter } from 'react-router-dom'
 import Map from '../../components/Map'
 import Search from '../../components/Search'
 import loadingImg from '../../assets/imgs/loading.gif'
@@ -63,6 +64,7 @@ class EpidemicCom extends React.Component {
   }
 
   goBack = () => {
+    console.log(this.props)
     this.props.history.push('/')
   }
 }
@@ -86,4 +88,4 @@ const mapStateToProps = function (state) {
 
 const Epidemic = connect(mapStateToProps, mapDispatchToProps)(EpidemicCom)
 
-export default Epidemic
+export default withRouter(Epidemic)

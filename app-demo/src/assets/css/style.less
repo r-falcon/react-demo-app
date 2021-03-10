@@ -4,13 +4,13 @@
 }
 
 html {
-  background: #FFFFDF;
+  background: #ffffdf;
 }
 
 .container {
   width: 100%;
   height: 100vh;
-  background: #FFFFDF;
+  background: #ffffdf;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -40,7 +40,7 @@ html {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: #FFFFDF;
+  background: #ffffdf;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,18 +66,18 @@ html {
       box-sizing: border-box;
       line-height: 80px;
       padding-left: 20px;
-      background: #66B3FF;
+      background: #66b3ff;
       border-radius: 10px;
       margin-bottom: 10px;
       color: #333;
       font-size: 18px;
 
       &.correct {
-        background: #93FF93;
+        background: #93ff93;
       }
 
       &.error {
-        background: #FF5151;
+        background: #ff5151;
       }
     }
   }
@@ -87,7 +87,7 @@ html {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: #FFFFDF;
+  background: #ffffdf;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,7 +98,7 @@ html {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: #FFFFDF;
+  background: #ffffdf;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,7 +126,7 @@ html {
 
 .epidemicContainer {
   width: 100%;
-  background: #FFFFDF;
+  background: #ffffdf;
   margin: 0 auto;
 
   h1 {
@@ -196,11 +196,11 @@ html {
         align-items: center;
 
         &:nth-of-type(odd) {
-          background: #FFED97;
+          background: #ffed97;
         }
 
         &:first-child {
-          background: #FFE66F;
+          background: #ffe66f;
         }
 
         h2 {
@@ -234,7 +234,8 @@ html {
 
 .newsContainer {
   width: 100%;
-  background: #FFFFDF;
+  background: #ffffdf;
+  overflow: hidden;
 
   .banner {
     width: 100%;
@@ -244,12 +245,12 @@ html {
     }
   }
 
-  .back_btn{
+  .back_btn {
     width: 90%;
     height: 50px;
     margin: 10px auto;
     line-height: 50px;
-    background: #FFE66F;
+    background: #ffe66f;
   }
 
   .newsContent {
@@ -270,7 +271,7 @@ html {
 
       .newsItem {
         width: 100%;
-        background: #FFF0AC;
+        background: #fff0ac;
         padding: 10px;
         position: relative;
         margin: 20px auto;
@@ -296,7 +297,7 @@ html {
           top: 26px;
           left: -31px;
           border: 16px solid transparent;
-          border-right-color: #FFF0AC;
+          border-right-color: #fff0ac;
         }
 
         &::after {
@@ -309,13 +310,12 @@ html {
           top: 35px;
           left: -40px;
         }
-
       }
     }
   }
 }
 
-.counterContainer{
+.counterContainer {
   width: 100%;
   height: 100vh;
   overflow: hidden;
@@ -323,12 +323,52 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #FFFFDF;
+  background: #ffffdf;
 
-  .control_btn{
+  .control_btn {
     width: 80%;
     height: 50px;
     margin: 10px auto;
-    background: #DEFFAC;
+    background: #deffac;
+  }
+}
+
+.tabContainer {
+  width: 100%;
+  background: #ffffdf;
+  position: relative;
+
+  .navBox {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+
+    .navItem {
+      width: 88px;
+      height: 44px;
+      line-height: 44px;
+      text-align: center;
+      font-size: 16px;
+
+      &.active{
+        color: #000;
+        font-weight: bold;
+      }
+    }
+
+    .barItem{
+      position: absolute;
+      width: 44px;
+      height: 4px;
+      background: orange;
+      bottom: 0;
+    }
+  }
+
+  .tabBox{
+    width: 1500px;
+    display: flex;
+    overflow: hidden;
   }
 }
